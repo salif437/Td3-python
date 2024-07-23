@@ -1,3 +1,4 @@
+#projet
 # Listes pour stocker les clients et les transactions
 customers = []
 transactions = []
@@ -24,7 +25,7 @@ def main_menu():
 # Fonctions pour la gestion des clients
 def gestion_client():
     while True:
-        print(f"""Gestion des clients
+        print("""Gestion des clients
         1 - Afficher la liste des clients
         2 - Ajouter un client
         3 - Supprimer un client
@@ -103,11 +104,11 @@ def display_balance():
 # Fonctions pour la gestion des transactions
 def manage_transactions():
     while True:
-        print("\nGestion des transactions")
-        print("1 - Afficher toutes les transactions")
-        print("2 - Afficher les transactions d'un client")
-        print("3 - Ajouter une transaction entre deux clients")
-        print("4 - Retour au menu principal")
+        print("""Gestion des transactions
+        1 - Afficher toutes les transactions
+        2 - Afficher les transactions d'un client
+        3 - Ajouter une transaction entre deux clients
+        4 - Retour au menu principal""")
         
         choice = input("Choisissez une option : ")
         
@@ -169,7 +170,6 @@ def add_transaction():
     
     print("Transaction ajoutée avec succès.")
 
-# Exécution de l'application
-#if __name__ == "__main__":
+
 main_menu()
             
